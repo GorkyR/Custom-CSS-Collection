@@ -1,0 +1,103 @@
+@-moz-document domain("twitter.com") {
+/* Timeline */
+.tweet-box,             /* Tweetbox at top of timeline */
+.SidebarCommonModules,  /* Analytics box */
+.dm-nav,                /* Messages tab */
+.roaming-module,        /* "Advertise on Twitter" boxes */
+.moments,               /* Moments tab */
+.people,                /* Notifications tab */
+.trends,                /* Trends box */
+.wtf-module,            /* "Who to follow" box */
+.inline-reply-tweetbox, /* Thread reply box */
+.stats,                 /* Tweet stats in thread */
+.topbar-tweet-btn       /* Tweet button on topbar */
+{ display: none !important; }
+
+/* Timeline > Profile box */
+.DashboardProfileCard /* Profile box */
+{ visibility: hidden; }
+
+.DashboardProfileCard-stats,
+.DashboardProfileCard-userFields,
+.DashboardProfileCard-avatarLink,
+.DashboardProfileCard-bg
+{ display: none; }
+
+span.count-inner /* Number in notifications bubble */
+{ font-size: 0; }
+
+/* Profile */
+.ProfileMessagingActions,   /* "Tweet at" and "Message" buttons on profiles */
+/*.ProfileUserList--socialProof, /* Social proof ("followers you know") */
+.has-profile-promoted-tweet /* Promoted tweets in profiles */
+{ display: none; }
+
+/* Profile > Navigation */
+.ProfileNav-item--tweets,    /* Tweets tab */
+.ProfileNav-item--following, /* Following tab */
+.ProfileNav-item--followers, /* Followers tab */
+/*.ProfileNav-item--favorites  /* Favorites tab */
+.ProfileNav-value            /* Counts in navigation tabs (number of tweets/likes/followers */
+{ display: none; }/**/
+
+.ProfileNav-list > .is-active {
+  /* Display current tab */
+  display: inline-block !important;
+}/**/
+
+.ProfileNav-label /* Labels of navigation tabs */ {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Profile > Tweet actions */
+.ProfileTweet-action--reply,     /* Reply button on tweets */
+/*.ProfileTweet-action--retweet,   /* Retweet button on tweets */
+/*.ProfileTweet-action--favorite,  /* Favorite button on tweets */
+.ProfileTweet-action--analytics, /* Analytics button on tweets */
+.ProfileTweet-action--dm,         /* DM button on tweets */
+.ProfileTweet-actionCount         /* Action stats on tweets (number of retweets/likes/replies) */
+{ display: none; }
+
+.ProfileTweet-action {
+  /* Action buttons closer together */
+    min-width: 40px !important;
+}
+
+/* Profile > Profile card */
+/*.ProfileCard-socialProof, /* Social proof ("followed by so and so") */
+.ProfileCardStats        /* Stats on profile cards (when you hover on a username) */
+{ display: none !important; }/**/
+}
+
+@-moz-document domain("twitter.com") {
+[data-testid="sidebarColumn"]        /* Sidebar */
+,[data-testid="primaryColumn"]>*>*>a /* Tweetbox at top of timeline */
+/*,nav[aria-label="Primary"]         /* Navigation in topbar */
+,nav[aria-label="Primary"] > a ~ a   /* Nav other than home */
+,[data-testid="tweet"] > div:last-child > div:last-child > div:nth-child(1) /* Reply button */
+,[data-testid="tweet"] > div:last-child > div:last-child > div:nth-child(4) /* Share button */
+,[data-testid="tweet"] > div:last-child > div:last-child span               /* Tweet action stats */
+,article[data-testid="tweetDetail"] > :nth-last-child(2)                    /* Tweet stats */
+,#react-root>:last-child>:nth-child(2)>*>*>*>*>*>*>:nth-child(4)            /* Follow counts on hover card */
+,[data-testid="primaryColumn"]>*>*>*>*>:nth-child(1)>div>:nth-child(5)      /* Follow counts on profile */
+,[data-testid="sendDMFromProfile"]   /* DM button */
+
+{ display: none !important; }
+
+header>*>*>*>*>*:first-child  { min-width: 150px !important; }
+.r-1mdbhws { max-width: 150px !important; }
+
+nothing
+{ background: red !important; }
+}
+
+@-moz-document regexp("https?://twitter.com/(?!(notifications|home|explore|messages)($|/))[^/]+") {
+[data-testid="sidebarColumn"]
+{display: block !important;}
+
+[data-testid="sidebarColumn"]>*>*>*>*>*> div:first-child ~ div
+{ display: none; }
+
+header>*>*>*>*>*:first-child { min-width: 0px !important; }
+}

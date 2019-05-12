@@ -1,0 +1,24 @@
+/* Hide: */
+._22l1._49XvD.b2rUF.ZUqME      /* Suggested for you */
+,._15y0l                       /* Comment button */
+/*,._5e4p                        /* Share button */
+,.-qQT3._0mzm-:nth-child(-n+4) /* Social media links in Share modal */
+,li.gElp9, li.lnrre            /* Descripcion + comments */
+,section.EDfFK.ygqzn           /* Likes and social nudge */
+,section.sH9wk._JgwE           /* Comment box */
+,._2eEhX                       /* Getting started box */
+{
+  display: none;
+}
+
+/* Show: */
+.gElp9:first-child /* Descripcion */
+{
+  display: block;
+}
+
+/* Make the Stories list larger */
+._5VUwz.ZUqME > div
+{
+  height: 400px !important;
+}

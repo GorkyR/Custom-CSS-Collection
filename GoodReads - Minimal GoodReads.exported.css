@@ -1,0 +1,46 @@
+@-moz-document domain("goodreads.com") {
+.siteHeader__topFullImageContainer                      /* Header banner */
+,.personalNav__listItem > *:not(.dropdown--profileMenu) /* useless header buttons */
+,#bookMeta > a, #bookMeta > .greyText                   /* Rating details on book page */
+,#buyButtonContainer                                    /* "Get a copy" buttons */
+,#details > .buttons                                    /* Useless detail buttons on book page */
+,.recommendItBar                                        /* "Recommend it" buttons */
+,footer                                                 /* Footer */
+,.communityRating > span > span:nth-child(n+2):nth-child(-n+5) /* Community rating detail on series page */
+,.communityRating > span > span:nth-child(n+8):nth-child(-n+9) /* Community rating detail on series page */
+,.wtrStarsContainer                 /* "Rate it" widget on series page */
+,td .wtrRating                      /* "Rate it" widget on list page */
+{ display:none; }
+
+.gr-homePageRailContainer footer /* */
+{ display: block; }
+}
+
+@-moz-document regexp("https?://(www.)?goodreads.com(?!(/user)|(/author)).*") {
+/*,#details                           /* Details on book page */
+.rightContainer > div:first-child  /* Share buttons */
+,div.right > .bookPageGenreLink     /* Genre user count */
+,.leftContainer > .bigBox           /* "My activity" on book page */
+,.rightContainer > *:nth-child(n+9) /* Trivia and whatever else on book page */
+,.gr-col-md-4 > div:first-child     /* "Advertisement" block on series page (?) */
+
+{
+  display: none;
+}
+
+/* Only show reviews from friends and people you follow */
+ #lazy_loadable_view > *:first-child:nth-last-child(8) ~ .bigBox:nth-last-child(-n+2)
+,#lazy_loadable_view > *:first-child:nth-last-child(8) ~ .bigBox:nth-child(5)
+
+,#lazy_loadable_view > *:first-child:nth-last-child(7) ~ .bigBox:nth-child(4)
+,#lazy_loadable_view > *:first-child:nth-last-child(7) ~ .bigBox:nth-last-child(-n+2)
+{
+  display: none;
+}
+}
+
+@-moz-document regexp("https?://(www.)?goodreads.com/author/.*") {
+.leftContainer > .bigBox           { display: none; }
+.leftContainer > .bigBox ~ .bigBox { display: block; }
+.rightContainer { margin-left: 25px }
+}

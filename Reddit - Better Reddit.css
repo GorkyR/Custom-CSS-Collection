@@ -1,0 +1,23 @@
+.score                         /* Upvotes */
+,.seo-comments                 /* "Related content" on comment page when not logged-in */
+,.seo-comments-recommendations /* ^ ^ ^ */
+,.awardings-bar                /* Gold, Silver, Platinum */
+,.premium-banner-outer         /* "Premium" banner */
+,.commentsignupbar             /* Fake comment field when not logged-in */
+,.give-gold                    /* "Give gold" button */
+,.redesign-beta-optin          /* "GET NEW REDDIT" opt-in button */
+{ display: none !important; }
+
+.archived                      /* Hide voting buttons on archived posts */
+{ visibility: hidden !important; }
+
+/* Hide useless features when not logged-in */
+body:not(.loggedin) .submit-text
+,body:not(.loggedin) .subscribe-button
+,body:not(.loggedin) .thing .login-required
+{ display: none !important; }
+
+body:not(.loggedin) .side .login-required
+{ visibility: hidden !important; }
+
+body:not(.loggedin) .rank { margin-right: 10px;}

@@ -1,0 +1,199 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/167738.json",
+		"md5Url": "https://update.userstyles.org/167738.md5",
+		"url": "http://userstyles.org/styles/167738",
+		"originalMd5": "3cd49b21a0d365c579b801620ef8b129",
+		"installDate": 1550116355630,
+		"sections": [
+			{
+				"code": ".view-count,                        /* View count under video */\n#metadata-line > span:first-child,  /* View count on recommended videos */\n#sentiment,                         /* Like:dislike ratio bar */\n#text.ytd-toggle-button-renderer,   /* Likes and dislikes count */\n#vote-count-middle,                 /* Comment vote count */\n.ytd-subscribe-button-renderer > span, /* Subscriber count on subscribe button */\n#subscriber-count,                  /* Subscriber count on channel page */\n.ytp-sb-count,                      /* Subscriber count on channel card on video */\n#subscribers                        /* Subscriber count on search result channel */ \n{\n    display: none !important;\n}",
+				"domains": [
+					"youtube.com"
+				]
+			}
+		],
+		"name": "Nudge-less Youtube",
+		"originalDigest": "32dfdc43334c47eac0bce42b69a5da63d2623f18",
+		"id": 1,
+		"updateDate": 1557697607481
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/167739.json",
+		"md5Url": "https://update.userstyles.org/167739.md5",
+		"url": "http://userstyles.org/styles/167739",
+		"originalMd5": "1dc6614230c73f0734debf8080fcb70f",
+		"installDate": 1550116363195,
+		"sections": [
+			{
+				"code": ".score                         /* Upvotes */\n,.seo-comments                 /* \"Related content\" on comment page when not logged-in */\n,.seo-comments-recommendations /* ^ ^ ^ */\n,.awardings-bar                /* Gold, Silver, Platinum */\n,.premium-banner-outer         /* \"Premium\" banner */\n,.commentsignupbar             /* Fake comment field when not logged-in */\n,.give-gold                    /* \"Give gold\" button */\n,.redesign-beta-optin          /* \"GET NEW REDDIT\" opt-in button */\n{ display: none !important; }\n\n.archived                      /* Hide voting buttons on archived posts */\n{ visibility: hidden !important; }\n\n/* Hide useless features when not logged-in */\nbody:not(.loggedin) .submit-text\n,body:not(.loggedin) .subscribe-button\n,body:not(.loggedin) .thing .login-required\n{ display: none !important; }\n\nbody:not(.loggedin) .side .login-required\n{ visibility: hidden !important; }\n\nbody:not(.loggedin) .rank { margin-right: 10px;}",
+				"domains": [
+					"reddit.com"
+				]
+			}
+		],
+		"name": "Better Reddit",
+		"originalDigest": "69c8fbd3569944abd2624ef117557dd4c26e75ec",
+		"id": 2,
+		"updateDate": 1557697436089
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/168863.json",
+		"md5Url": "https://update.userstyles.org/168863.md5",
+		"url": "http://userstyles.org/styles/168863",
+		"originalMd5": "7b4ceba8eac43abbcf1e0e31d48ea58d",
+		"installDate": 1550116372809,
+		"sections": [
+			{
+				"code": "body { font-family: Inter, Helvetica, Verdana, Arial, sans-serif !important; }\n\n.buy-now, .social,\n.btn-group, .btn-share, .btn-like,\n.likes\n{ display: none !important; }\n\np > a { text-decoration: underline; }\n\n.post:not(.listview) {\n  max-width: 800px !important;\n}\n\n.content-body {\n  margin: auto;\n  color: #222;\n  max-width: 600px !important;\n  font-family: Inter, Helvetica, Verdana, Arial, sans-serif !important;\n}\n\n.content-body > * /*, p, blockquote /**/ {\n  font-size: 17px !important;\n  font-weight: 200 !important;\n  line-height: 1.2em;\n  /*margin: auto;*/\n  margin-bottom: 12px !important;\n}\n\nh3 {\n  max-width: 600px;/**/\n  font-size: 20px;\n  font-family: Inter, Helvetica, Verdana, Arial, sans-serif !important;\n  margin-bottom: 24px !important;\n}\n\n.responsive-img-wrapper {\n  display: inline !important;\n  /*margin-bottom: 16px;/**/\n}\n\n.responsive-img-wrapper:after {\n  content: \"\\a\\a\";\n  white-space: pre;\n}\n\n.sidenav-cell { width: 20% !important; }\n.content-cell { width: 80% !important; }\n\n.nav-list { padding-right: 0 !important; }\n.nav-list .badge { min-width: 25px; }\n.nav-list strong { min-width: 265px; }",
+				"domains": [
+					"next.theoldreader.com"
+				]
+			}
+		],
+		"name": "Better Old Reader",
+		"originalDigest": "bc6bae6a9a0e35c8238e6233d8d57d1a7cffa926",
+		"id": 4,
+		"updateDate": 1550597335376,
+		"originalName": "Better Old Reader"
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/168975.json",
+		"md5Url": "https://update.userstyles.org/168975.md5",
+		"url": "http://userstyles.org/styles/168975",
+		"originalMd5": "e64f4e9f78c7c1e3b2ebef1246a9bcd7",
+		"installDate": 1550146713006,
+		"sections": [
+			{
+				"code": "/* Hide: */\n._22l1._49XvD.b2rUF.ZUqME      /* Suggested for you */\n,._15y0l                       /* Comment button */\n/*,._5e4p                        /* Share button */\n,.-qQT3._0mzm-:nth-child(-n+4) /* Social media links in Share modal */\n,li.gElp9, li.lnrre            /* Descripcion + comments */\n,section.EDfFK.ygqzn           /* Likes and social nudge */\n,section.sH9wk._JgwE           /* Comment box */\n,._2eEhX                       /* Getting started box */\n{\n  display: none;\n}\n\n/* Show: */\n.gElp9:first-child /* Descripcion */\n{\n  display: block;\n}\n\n/* Make the Stories list larger */\n._5VUwz.ZUqME > div\n{\n  height: 400px !important;\n}",
+				"domains": [
+					"instagram.com"
+				]
+			}
+		],
+		"name": "Better Instagram",
+		"originalDigest": "b6661924e00591d90a7d0d39627a6a72974ba1d9",
+		"id": 6
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/102173.json",
+		"md5Url": "https://update.userstyles.org/102173.md5",
+		"url": "http://userstyles.org/styles/102173",
+		"originalMd5": "c7c60a73b294a8ac3a7621fbf3080516",
+		"installDate": 1550261752866,
+		"sections": [
+			{
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": [
+					"http(s|)://getpocket.com/a/(queue|favorites|archive)/.*"
+				],
+				"code": "a.topic_detail {\r\n  z-index: 1 !important;\r\n}\r\n\r\na.original_url {\r\n  overflow: visible !important;\r\n}\r\n\r\na.original_url::before {\r\n  display: block;\r\n  content: \"\";\r\n  width: 1157px;\r\n  height: 287px;\r\n  position: absolute;\r\n  top: -257px;\r\n  left: -328px;\r\n}\r\n\r\nli.action_mark a {\r\n  overflow: visible !important;\r\n}\r\n\r\nli.action_mark a::before {\r\n  display: block;\r\n  content: \"\";\r\n  position: absolute;\r\n  opacity: 0;\r\n  background: rgba(0,0,0,0.5) url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgNDggNDgiPjxwYXRoIGQ9Ik00MiAxMHEwLjg1OSAwIDEuNDMgMC41N3QwLjU3IDEuNDNxMCAwLjg0NC0wLjU3OCAxLjQyMmwtMjQgMjRxLTAuNTc4IDAuNTc4LTEuNDIyIDAuNTc4dC0xLjQyMi0wLjU3OGwtMTItMTJxLTAuNTc4LTAuNTc4LTAuNTc4LTEuNDIyIDAtMC44NTkgMC41Ny0xLjQzdDEuNDMtMC41N3EwLjg0NCAwIDEuNDIyIDAuNTc4bDEwLjU3OCAxMC41OTQgMjIuNTc4LTIyLjU5NHEwLjU3OC0wLjU3OCAxLjQyMi0wLjU3OHoiIGZpbGw9IiM4MGU3YjQiPjwvcGF0aD48L3N2Zz4=) center no-repeat;\r\n  background-size: 90%;\r\n}\r\nli.action_mark_archived a::before {\r\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgNDggNDgiPjxwYXRoIGQ9Ik0yNCA0cTAuODI4IDAgMS40MTQgMC41ODZ0MC41ODYgMS40MTR2MTZoMTZxMC44MjggMCAxLjQxNCAwLjU4NnQwLjU4NiAxLjQxNC0wLjU4NiAxLjQxNC0xLjQxNCAwLjU4NmgtMTZ2MTZxMCAwLjgyOC0wLjU4NiAxLjQxNHQtMS40MTQgMC41ODYtMS40MTQtMC41ODYtMC41ODYtMS40MTR2LTE2aC0xNnEtMC44MjggMC0xLjQxNC0wLjU4NnQtMC41ODYtMS40MTQgMC41ODYtMS40MTQgMS40MTQtMC41ODZoMTZ2LTE2cTAtMC44MjggMC41ODYtMS40MTR0MS40MTQtMC41ODZ6IiBmaWxsPSIjODBlN2I0Ij48L3BhdGg+PC9zdmc+);\r\n  background-size: 0;\r\n}\r\nli.action_mark a:hover::before {\r\n  opacity: 1;\r\n  transition: background-size 0.15s cubic-bezier(0.575, 0.000, 0.385, 1.410);\r\n  background-size: 48px;\r\n}\r\n\r\ndiv.page_queue_list li.action_mark a::before {\r\n  width: 100px;\r\n  height: 80px;\r\n  top: -17px;\r\n  left: -829px;\r\n}\r\ndiv.page_queue_list li.action_mark_archived a::before {\r\n  left: -832px;\r\n}\r\n\r\ndiv.page_queue_grid li.action_mark a::before {\r\n  width: 170px;\r\n  height: 170px;\r\n  left: 20px;\r\n  top: -330px;\r\n  border-radius: 50%;\r\n  background-position: 25% 75%;\r\n}\r\ndiv.page_queue_grid .action_mark a:hover::before {\r\n  transition-property: all;\r\n  transition-delay: 0.075s;\r\n}\r\n\r\n.pkt_toast_wrapper {\r\n  top: 85%;\r\n  left: 35%;\r\n}"
+			}
+		],
+		"name": "Pocket : Article-View killer PLUS",
+		"originalDigest": "e5e9550b59ae639ba6ca413de63f6e41828d8049",
+		"id": 9
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/169063.json",
+		"md5Url": "https://update.userstyles.org/169063.md5",
+		"url": "http://userstyles.org/styles/169063",
+		"originalMd5": "d52645a751b0320953af82b40d9d1b18",
+		"installDate": 1550365750921,
+		"sections": [
+			{
+				"code": ".siteHeader__topFullImageContainer                      /* Header banner */\n,.personalNav__listItem > *:not(.dropdown--profileMenu) /* useless header buttons */\n,#bookMeta > a, #bookMeta > .greyText                   /* Rating details on book page */\n,#buyButtonContainer                                    /* \"Get a copy\" buttons */\n,#details > .buttons                                    /* Useless detail buttons on book page */\n,.recommendItBar                                        /* \"Recommend it\" buttons */\n,footer                                                 /* Footer */\n,.communityRating > span > span:nth-child(n+2):nth-child(-n+5) /* Community rating detail on series page */\n,.communityRating > span > span:nth-child(n+8):nth-child(-n+9) /* Community rating detail on series page */\n,.wtrStarsContainer                 /* \"Rate it\" widget on series page */\n,td .wtrRating                      /* \"Rate it\" widget on list page */\n{ display:none; }\n\n.gr-homePageRailContainer footer /* */\n{ display: block; }",
+				"domains": [
+					"goodreads.com"
+				]
+			},
+			{
+				"code": "/*,#details                           /* Details on book page */\n.rightContainer > div:first-child  /* Share buttons */\n,div.right > .bookPageGenreLink     /* Genre user count */\n,.leftContainer > .bigBox           /* \"My activity\" on book page */\n,.rightContainer > *:nth-child(n+9) /* Trivia and whatever else on book page */\n,.gr-col-md-4 > div:first-child     /* \"Advertisement\" block on series page (?) */\n\n{\n  display: none;\n}\n\n/* Only show reviews from friends and people you follow */\n #lazy_loadable_view > *:first-child:nth-last-child(8) ~ .bigBox:nth-last-child(-n+2)\n,#lazy_loadable_view > *:first-child:nth-last-child(8) ~ .bigBox:nth-child(5)\n\n,#lazy_loadable_view > *:first-child:nth-last-child(7) ~ .bigBox:nth-child(4)\n,#lazy_loadable_view > *:first-child:nth-last-child(7) ~ .bigBox:nth-last-child(-n+2)\n{\n  display: none;\n}",
+				"regexps": [
+					"https?://(www.)?goodreads.com(?!(/user)|(/author)).*"
+				]
+			},
+			{
+				"code": ".leftContainer > .bigBox           { display: none; }\n.leftContainer > .bigBox ~ .bigBox { display: block; }\n.rightContainer { margin-left: 25px }",
+				"regexps": [
+					"https?://(www.)?goodreads.com/author/.*"
+				]
+			}
+		],
+		"name": "Minimal goodreads",
+		"originalDigest": "1efa48e7f86a0e355faf7288b771ece5b80e4ed5",
+		"id": 15
+	},
+	{
+		"enabled": false,
+		"updateUrl": "https://userstyles.org/styles/chrome/164708.json",
+		"md5Url": "https://update.userstyles.org/164708.md5",
+		"url": "http://userstyles.org/styles/164708",
+		"originalMd5": "548e2f9a85aebbf1100094463d381c90",
+		"installDate": 1550542586236,
+		"sections": [
+			{
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"instagram.com"
+				],
+				"regexps": [],
+				"code": "._lz6s.aUCRo {\r\n      z-index: 3;\r\n  }\r\n  img.FFVAD {\r\n      z-index: 2;\r\n  }"
+			}
+		],
+		"name": "Instagram - Save image as",
+		"originalDigest": "da6bb273cb5ce056da63b44a976fe33623464661",
+		"id": 24
+	},
+	{
+		"enabled": true,
+		"updateUrl": "https://userstyles.org/styles/chrome/167741.json",
+		"md5Url": "https://update.userstyles.org/167741.md5",
+		"url": "http://userstyles.org/styles/167741",
+		"originalMd5": "3312c8442c37735eb2e68a6ebeb2af5b",
+		"installDate": 1551105984460,
+		"sections": [
+			{
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"twitter.com"
+				],
+				"regexps": [],
+				"code": "/* Timeline */\r\n.tweet-box,             /* Tweetbox at top of timeline */\r\n.SidebarCommonModules,  /* Analytics box */\r\n.dm-nav,                /* Messages tab */\r\n.roaming-module,        /* \"Advertise on Twitter\" boxes */\r\n.moments,               /* Moments tab */\r\n.people,                /* Notifications tab */\r\n.trends,                /* Trends box */\r\n.wtf-module,            /* \"Who to follow\" box */\r\n.inline-reply-tweetbox, /* Thread reply box */\r\n.stats,                 /* Tweet stats in thread */\r\n.topbar-tweet-btn       /* Tweet button on topbar */\r\n{ display: none !important; }\r\n\r\n/* Timeline > Profile box */\r\n.DashboardProfileCard /* Profile box */\r\n{ visibility: hidden; }\r\n\r\n.DashboardProfileCard-stats,\r\n.DashboardProfileCard-userFields,\r\n.DashboardProfileCard-avatarLink,\r\n.DashboardProfileCard-bg\r\n{ display: none; }\r\n\r\nspan.count-inner /* Number in notifications bubble */\r\n{ font-size: 0; }\r\n\r\n/* Profile */\r\n.ProfileMessagingActions,   /* \"Tweet at\" and \"Message\" buttons on profiles */\r\n/*.ProfileUserList--socialProof, /* Social proof (\"followers you know\") */\r\n.has-profile-promoted-tweet /* Promoted tweets in profiles */\r\n{ display: none; }\r\n\r\n/* Profile > Navigation */\r\n.ProfileNav-item--tweets,    /* Tweets tab */\r\n.ProfileNav-item--following, /* Following tab */\r\n.ProfileNav-item--followers, /* Followers tab */\r\n/*.ProfileNav-item--favorites  /* Favorites tab */\r\n.ProfileNav-value            /* Counts in navigation tabs (number of tweets/likes/followers */\r\n{ display: none; }/**/\r\n\r\n.ProfileNav-list > .is-active {\r\n  /* Display current tab */\r\n  display: inline-block !important;\r\n}/**/\r\n\r\n.ProfileNav-label /* Labels of navigation tabs */ {\r\n  margin-top: 10px;\r\n  font-size: 16px;\r\n}\r\n\r\n/* Profile > Tweet actions */\r\n.ProfileTweet-action--reply,     /* Reply button on tweets */\r\n/*.ProfileTweet-action--retweet,   /* Retweet button on tweets */\r\n/*.ProfileTweet-action--favorite,  /* Favorite button on tweets */\r\n.ProfileTweet-action--analytics, /* Analytics button on tweets */\r\n.ProfileTweet-action--dm,         /* DM button on tweets */\r\n.ProfileTweet-actionCount         /* Action stats on tweets (number of retweets/likes/replies) */\r\n{ display: none; }\r\n\r\n.ProfileTweet-action {\r\n  /* Action buttons closer together */\r\n    min-width: 40px !important;\r\n}\r\n\r\n/* Profile > Profile card */\r\n/*.ProfileCard-socialProof, /* Social proof (\"followed by so and so\") */\r\n.ProfileCardStats        /* Stats on profile cards (when you hover on a username) */\r\n{ display: none !important; }/**/"
+			},
+			{
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"twitter.com"
+				],
+				"regexps": [],
+				"code": "[data-testid=\"sidebarColumn\"]        /* Sidebar */\r\n,[data-testid=\"primaryColumn\"]>*>*>a /* Tweetbox at top of timeline */\r\n/*,nav[aria-label=\"Primary\"]         /* Navigation in topbar */\r\n,nav[aria-label=\"Primary\"] > a ~ a   /* Nav other than home */\r\n,[data-testid=\"tweet\"] > div:last-child > div:last-child > div:nth-child(1) /* Reply button */\r\n,[data-testid=\"tweet\"] > div:last-child > div:last-child > div:nth-child(4) /* Share button */\r\n,[data-testid=\"tweet\"] > div:last-child > div:last-child span               /* Tweet action stats */\r\n,article[data-testid=\"tweetDetail\"] > :nth-last-child(2)                    /* Tweet stats */\r\n,#react-root>:last-child>:nth-child(2)>*>*>*>*>*>*>:nth-child(4)            /* Follow counts on hover card */\r\n,[data-testid=\"primaryColumn\"]>*>*>*>*>:nth-child(1)>div>:nth-child(5)      /* Follow counts on profile */\r\n,[data-testid=\"sendDMFromProfile\"]   /* DM button */\r\n\r\n{ display: none !important; }\r\n\r\nheader>*>*>*>*>*:first-child  { min-width: 150px !important; }\r\n.r-1mdbhws { max-width: 150px !important; }\r\n\r\nnothing\r\n{ background: red !important; }"
+			},
+			{
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [],
+				"regexps": [
+					"https?://twitter.com/(?!(notifications|home|explore|messages)($|/))[^/]+"
+				],
+				"code": "[data-testid=\"sidebarColumn\"]\r\n{display: block !important;}\r\n\r\n[data-testid=\"sidebarColumn\"]>*>*>*>*>*> div:first-child ~ div\r\n{ display: none; }\r\n\r\nheader>*>*>*>*>*:first-child { min-width: 0px !important; }"
+			}
+		],
+		"name": "Nudge-less Twitter",
+		"originalDigest": "c782ffaef4924ce550d721457baea61f66984e7f",
+		"id": 34,
+		"updateDate": 1553793202374,
+		"originalName": "Nudge-less Twitter"
+	}
+]
