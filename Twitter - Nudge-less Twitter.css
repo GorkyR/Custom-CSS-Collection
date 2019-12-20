@@ -1,0 +1,10 @@
+[data-testid="tweet"] [role="group"] [role="button"] span /* Tweet stats in timeline */
+,article [data-testid="tweet"] ~ :nth-last-child(2)
+,[data-testid="AppTabBar_Explore_Link"] /* Explore nav link */
+,[data-testid="AppTabBar_DirectMessage_Link"] /* Messages nav link */
+,[data-testid="sidebarColumn"] > div > div > div > div > div > :nth-last-child(-n+3) /* Sidebar (except media in profiles) */
+,[data-testid="primaryColumn"] a[tabindex="-1"] + div > :nth-child(5) /* Follow counts in profile page */
+,[data-testid="UserCell"]
+  ,[data-testid="primaryColumn"] section h2
+  ,[data-testid="primaryColumn"] section > div > div > div > div > div > a /* "Who to follow" in profile pages */
+{ background: red !important; display: none !important; }
