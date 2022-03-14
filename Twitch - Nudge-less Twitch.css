@@ -1,0 +1,8 @@
+[data-a-target="subscribed-button"]
+,.top-nav__prime
+,.top-nav__menu > :nth-last-child(1) > :nth-last-child(2)
+,[aria-label="Recommended Channels"]
+,.find-me
+,[data-target^="following__follow-games"]
+,[aria-label="Unfollow"]
+{ display: none !important; /**/ }
